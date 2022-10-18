@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/nice-select2.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablet_1024.css">
+  <link rel="stylesheet" href="./css/mobile_320.css">
+  <script src="./js/index.js" type="module" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a href="#" class="logo">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="25" cy="25" r="25" fill="#9873FF" />
+          <path
+            d="M17.2617 29.082C17.2617 30.0898 16.9102 30.8574 16.207 31.3848C15.5098 31.9121 14.4639 32.1758 13.0693 32.1758C12.3545 32.1758 11.7451 32.126 11.2412 32.0264C10.7373 31.9326 10.2656 31.792 9.82617 31.6045V29.3896C10.3242 29.624 10.8838 29.8203 11.5049 29.9785C12.1318 30.1367 12.6826 30.2158 13.1572 30.2158C14.1299 30.2158 14.6162 29.9346 14.6162 29.3721C14.6162 29.1611 14.5518 28.9912 14.4229 28.8623C14.2939 28.7275 14.0713 28.5781 13.7549 28.4141C13.4385 28.2441 13.0166 28.0479 12.4893 27.8252C11.7334 27.5088 11.1768 27.2158 10.8193 26.9463C10.4678 26.6768 10.21 26.3691 10.0459 26.0234C9.8877 25.6719 9.80859 25.2412 9.80859 24.7314C9.80859 23.8584 10.1455 23.1846 10.8193 22.71C11.499 22.2295 12.46 21.9893 13.7021 21.9893C14.8857 21.9893 16.0371 22.2471 17.1562 22.7627L16.3477 24.6963C15.8555 24.4854 15.3955 24.3125 14.9678 24.1777C14.54 24.043 14.1035 23.9756 13.6582 23.9756C12.8672 23.9756 12.4717 24.1895 12.4717 24.6172C12.4717 24.8574 12.5977 25.0654 12.8496 25.2412C13.1074 25.417 13.667 25.6777 14.5283 26.0234C15.2959 26.334 15.8584 26.624 16.2158 26.8936C16.5732 27.1631 16.8369 27.4736 17.0068 27.8252C17.1768 28.1768 17.2617 28.5957 17.2617 29.082ZM21.9287 26.6562L23.0977 25.1621L25.8486 22.1738H28.8721L24.9697 26.4365L29.1094 32H26.0156L23.1855 28.0186L22.0342 28.9414V32H19.3535V18.3242H22.0342V24.4238L21.8936 26.6562H21.9287ZM35.9824 21.9893C37.1426 21.9893 38.0508 22.4434 38.707 23.3516C39.3633 24.2539 39.6914 25.4932 39.6914 27.0693C39.6914 28.6924 39.3516 29.9492 38.6719 30.8398C37.998 31.7305 37.0781 32.1758 35.9121 32.1758C34.7578 32.1758 33.8525 31.7568 33.1963 30.9189H33.0117L32.5635 32H30.5156V18.3242H33.1963V21.5059C33.1963 21.9102 33.1611 22.5576 33.0908 23.4482H33.1963C33.8232 22.4756 34.752 21.9893 35.9824 21.9893ZM35.1211 24.1338C34.459 24.1338 33.9756 24.3389 33.6709 24.749C33.3662 25.1533 33.208 25.8242 33.1963 26.7617V27.0518C33.1963 28.1064 33.3516 28.8623 33.6621 29.3193C33.9785 29.7764 34.4766 30.0049 35.1562 30.0049C35.707 30.0049 36.1436 29.7529 36.4658 29.249C36.7939 28.7393 36.958 28.001 36.958 27.0342C36.958 26.0674 36.7939 25.3438 36.4658 24.8633C36.1377 24.377 35.6895 24.1338 35.1211 24.1338ZM41.5283 30.7432C41.5283 30.251 41.6602 29.8789 41.9238 29.627C42.1875 29.375 42.5713 29.249 43.0752 29.249C43.5615 29.249 43.9365 29.3779 44.2002 29.6357C44.4697 29.8936 44.6045 30.2627 44.6045 30.7432C44.6045 31.2061 44.4697 31.5723 44.2002 31.8418C43.9307 32.1055 43.5557 32.2373 43.0752 32.2373C42.583 32.2373 42.2021 32.1084 41.9326 31.8506C41.6631 31.5869 41.5283 31.2178 41.5283 30.7432Z"
+            fill="white" />
+        </svg>
+      </a>
+
+      <div class="search">
+        <input class="input search__input" type="text" placeholder="Введите запрос">
+        <div class="search__auto-complite js-auto-complite"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <secton class="table">
+      <h1 class="table__header">Клиенты</h1>
+      <div class="table__wrapper">
+        <table cellpadding="0" cellspacing="0">
+          <thead>
+            <tr class="table__headers">
+              <th class="id" id="id">ID
+                <svg class="js-id-arrow arrow" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                    fill="#9873FF" />
+                </svg>
+              </th>
+              <th class="name" id="name">Фамилия Имя Отчество
+                <svg class="js-name-arrow arrow" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                    fill="#9873FF" />
+                </svg>
+                <span class="id__letters">А-Я</span>
+              </th>
+              <th class="data" id="data">Дата и время создания
+                <svg class="js-data-arrow arrow" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                    fill="#9873FF" />
+                </svg>
+              </th>
+              <th class="last__change" id="last__change">Последние изменения
+                <svg class="js-change-arrow arrow" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                    fill="#9873FF" />
+                </svg>
+              </th>
+              <th class="contacts" id="contacts">Контакты</th>
+              <th class="actions" id="actions">Действия</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+
+        <div class="table__loader hidden">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.00008 8.04008C3.00008 10.8236 5.2566 13.0801 8.04008 13.0801C10.8236 13.0801 13.0801 10.8236 13.0801 8.04008C13.0801 5.2566 10.8236 3.00008 8.04008 3.00008C7.38922 3.00008 6.7672 3.12342 6.196 3.34812"
+              stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+
+      <button class="btn btn-client--add">
+        <span class="btn__img">
+          <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+              fill="#9873FF" />
+          </svg>
+        </span>
+        Добавить клиента
+      </button>
+    </secton>
+
+    <div class="modal modal--hidden">
+      <div class="model__overlay"></div>
+      <div class="model__window model__window--remove hidden">
+        <div class="loader__overlay  loader__overlay-delete hidden">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.00008 8.04008C3.00008 10.8236 5.2566 13.0801 8.04008 13.0801C10.8236 13.0801 13.0801 10.8236 13.0801 8.04008C13.0801 5.2566 10.8236 3.00008 8.04008 3.00008C7.38922 3.00008 6.7672 3.12342 6.196 3.34812"
+              stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h2 class="model__window-header modal__remove-client">Удалить клиента</h2>
+        <span class="model__window-cross model__window-cross--delete">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M22.2333 7.73333L21.2666 6.76666L14.4999 13.5334L7.73324 6.7667L6.76658 7.73336L13.5332 14.5L6.7666 21.2667L7.73327 22.2333L14.4999 15.4667L21.2666 22.2334L22.2332 21.2667L15.4666 14.5L22.2333 7.73333Z"
+              fill="#B0B0B0" />
+          </svg>
+        </span>
+
+        <span class="model__text">Вы действительно хотите удалить данного клиента?</span>
+
+        <button class="remove__btn delete__btn">
+          <svg id="delete__button-loader" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.00008 8.04008C3.00008 10.8236 5.2566 13.0801 8.04008 13.0801C10.8236 13.0801 13.0801 10.8236 13.0801 8.04008C13.0801 5.2566 10.8236 3.00008 8.04008 3.00008C7.38922 3.00008 6.7672 3.12342 6.196 3.34812"
+              stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+          </svg>
+          Удалить
+        </button>
+
+        <button class="cancel__btn">
+          Отмена
+        </button>
+      </div>
+
+      <div class="model__window model__window--create">
+        <div class="model__header-wrapper">
+          <h2 class="model__window-header model__window-header--change hidden">Изменить данные</h2>
+          <h2 class="model__window-header model__window-header--new">Новый клиент</h2>
+          <span class="model__id"></span>
+        </div>
+        <span class="model__window-cross model__window-cross--create">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M22.2333 7.73333L21.2666 6.76666L14.4999 13.5334L7.73324 6.7667L6.76658 7.73336L13.5332 14.5L6.7666 21.2667L7.73327 22.2333L14.4999 15.4667L21.2666 22.2334L22.2332 21.2667L15.4666 14.5L22.2333 7.73333Z"
+              fill="#B0B0B0" />
+          </svg>
+        </span>
+
+        <form class="form">
+          <div class="inputs__wrapper">
+            <label for="surname">Фамилия<span class="modal__star">*</span></label>
+            <input class="model_window-input" data-validate-field="surname" name="surname" type="text" id="surname">
+            <div class="error input_error--surname"></div>
+            <label for="username">Имя<span class="modal__star">*</span></label>
+            <input class="model_window-input" data-validate-field="name" name="name" type="text" id="username">
+            <div class="error input_error--name"></div>
+            <label for="lastname">Отчество</label>
+            <input class="model_window-input" data-validate-field="lastName" name="lastName" type="text" id="lastName">
+            <div class="error input_error--lastname"></div>
+          </div>
+
+          <div class="select__container">
+            <div class="select__content"></div>
+            <div class="create__contact">
+              <span class="add__contact-img">
+                <svg class="add__contact-svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.00001 3.66667C6.63334 3.66667 6.33334 3.96667 6.33334 4.33333V6.33333H4.33334C3.96668 6.33333 3.66668 6.63333 3.66668 7C3.66668 7.36667 3.96668 7.66667 4.33334 7.66667H6.33334V9.66667C6.33334 10.0333 6.63334 10.3333 7.00001 10.3333C7.36668 10.3333 7.66668 10.0333 7.66668 9.66667V7.66667H9.66668C10.0333 7.66667 10.3333 7.36667 10.3333 7C10.3333 6.63333 10.0333 6.33333 9.66668 6.33333H7.66668V4.33333C7.66668 3.96667 7.36668 3.66667 7.00001 3.66667ZM7.00001 0.333332C3.32001 0.333332 0.333344 3.32 0.333344 7C0.333344 10.68 3.32001 13.6667 7.00001 13.6667C10.68 13.6667 13.6667 10.68 13.6667 7C13.6667 3.32 10.68 0.333332 7.00001 0.333332ZM7.00001 12.3333C4.06001 12.3333 1.66668 9.94 1.66668 7C1.66668 4.06 4.06001 1.66667 7.00001 1.66667C9.94001 1.66667 12.3333 4.06 12.3333 7C12.3333 9.94 9.94001 12.3333 7.00001 12.3333Z"
+                    fill="#9873FF" />
+                </svg>
+
+                <svg class="add__contact-svg add__contact-svg--active" width="14" height="14" viewBox="0 0 14 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.333313 7.00016C0.333313 3.32016 3.31998 0.333496 6.99998 0.333496C10.68 0.333496 13.6666 3.32016 13.6666 7.00016C13.6666 10.6802 10.68 13.6668 6.99998 13.6668C3.31998 13.6668 0.333313 10.6802 0.333313 7.00016ZM6.33329 4.33366C6.33329 3.96699 6.63329 3.66699 6.99996 3.66699C7.36663 3.66699 7.66663 3.96699 7.66663 4.33366V6.33366H9.66663C10.0333 6.33366 10.3333 6.63366 10.3333 7.00033C10.3333 7.36699 10.0333 7.66699 9.66663 7.66699H7.66663V9.66699C7.66663 10.0337 7.36663 10.3337 6.99996 10.3337C6.63329 10.3337 6.33329 10.0337 6.33329 9.66699V7.66699H4.33329C3.96663 7.66699 3.66663 7.36699 3.66663 7.00033C3.66663 6.63366 3.96663 6.33366 4.33329 6.33366H6.33329V4.33366Z"
+                    fill="#9873FF" />
+                </svg>
+              </span>
+              <div class="add__contact">
+                Добавить контакт
+              </div>
+            </div>
+          </div>
+
+          <div class="error error--contacts js-error-contacts"></div>
+
+          <button class="save__btn">
+            <svg id="save__button-loader" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.00008 8.04008C3.00008 10.8236 5.2566 13.0801 8.04008 13.0801C10.8236 13.0801 13.0801 10.8236 13.0801 8.04008C13.0801 5.2566 10.8236 3.00008 8.04008 3.00008C7.38922 3.00008 6.7672 3.12342 6.196 3.34812"
+                stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+            </svg>
+            Сохранить
+          </button>
+
+          <button class="delete__btn--client">
+            Удалить клиента
+          </button>
+
+          <button class="cancel__btn cancel__btn-new-user">
+            Отмена
+          </button>
+
+        </form>
+        <div class="loader__overlay hidden">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.00008 8.04008C3.00008 10.8236 5.2566 13.0801 8.04008 13.0801C10.8236 13.0801 13.0801 10.8236 13.0801 8.04008C13.0801 5.2566 10.8236 3.00008 8.04008 3.00008C7.38922 3.00008 6.7672 3.12342 6.196 3.34812"
+              stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="./js/libs/nice-select2.js"></script>
+</body>
+
+</html>

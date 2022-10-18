@@ -1,0 +1,53 @@
+@media(max-width:400px) {
+
+  .search {
+    display: none;
+  }
+
+  .model__header-wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .inputs__wrapper {
+    padding: 0 15px;
+  }
+
+  .select__wrapper {
+    padding: 0 15px;
+  }
+
+  .input {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .header__wrapper {
+    justify-content: center;
+  }
+
+  .table__header {
+    font-size: 18px;
+  }
+
+  .table__wrapper {
+    overflow: scroll;
+  }
+
+  .model__window {
+    width: 94%;
+  }
+
+  .model__window-input {
+    padding: 6px;
+    width: 100%;
+  }
+
+  .nice-select {
+    min-width: 110px;
+  }
+
+}

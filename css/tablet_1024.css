@@ -1,0 +1,33 @@
+@media(max-width:1100px) {
+
+  .table__header {
+    padding-left: 20px;
+  }
+
+  table {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btn {
+    justify-content: center;
+    width: 216px;
+    height: 44px;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .name {
+    min-width: initial;
+    width: 21%;
+  }
+
+  tr td {
+    padding: 10px;
+  }
+
+  tr th {
+    padding: 10px;
+  }
+
+}
